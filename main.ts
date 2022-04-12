@@ -37,5 +37,7 @@
 
 // let backgroundColor = Color.Red;
 
-let message = "abc";
-let endsWithC = message.endsWith("c");
+let message;
+message = "abc";
+let endsWithC = (<string>message).endsWith("c");
+let alternativeWay = (message as string).endsWith("c");
