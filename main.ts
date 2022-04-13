@@ -42,10 +42,23 @@
 // let endsWithC = (<string>message).endsWith("c");
 // let alternativeWay = (message as string).endsWith("c");
 
-let log = function (message) {
-  console.log(message);
+// let log = function (message) {
+//   console.log(message);
+// };
+
+// let doLog = (message) => {
+//   console.log(message);
+// };
+interface Point {
+  x: number;
+  y: number;
+}
+
+let drawPoint = (point: { x: number; y: number }) => {
+  // ...
 };
 
-let doLog = (message) => {
-  console.log(message);
-};
+drawPoint({
+  x: 1,
+  y: 2,
+});
