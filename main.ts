@@ -55,21 +55,12 @@ class Point {
   y: number;
 
   draw() {
-    // ...
-
+    console.log("X: " + this.x + ", Y: " + this.y);
   }
-  getDistance(another: Point){
+  getDistance(another: Point) {
     // ...
-  }let drawPoint = (point: Point) => {
-    // ...
-  };
+  }
 }
 
-
-
-
-
-drawPoint({
-  x: 1,
-  y: 2,
-});
+let point: Point;
+point.draw();
